@@ -12,6 +12,10 @@ A web-based platform that uses artificial intelligence to analyze plant images a
 - **Plant Library**: Browse care guides for popular garden plants
 - **Confidence Scoring**: See confidence levels for each diagnosis
 
+VERCEL LIVE UPL
+https://ai-final-project-plp-qu7h.vercel.app/
+
+
 ## 🚀 Tech Stack
 
 ### Frontend
