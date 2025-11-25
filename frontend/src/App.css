@@ -1,0 +1,63 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2d5016 0%, #1a3a0a 100%);
+  color: #333;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.home-section {
+  padding: 40px 20px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 4px solid #721c24;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8em;
+  }
+  
+  .hero p {
+    font-size: 0.95em;
+  }
+}

@@ -1,0 +1,187 @@
+.library-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.library-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.library-header h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.library-header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.library-loading,
+.library-error {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 1.1em;
+}
+
+.library-error {
+  background-color: rgba(244, 67, 54, 0.2);
+  border-radius: 8px;
+  border-left: 4px solid #f44336;
+}
+
+.library-content {
+  display: grid;
+  gap: 30px;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.plant-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plant-card.selected {
+  background-color: #7cb342;
+  color: white;
+}
+
+.plant-card-header {
+  margin-bottom: 10px;
+}
+
+.plant-card-header h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #2d5016;
+}
+
+.plant-card.selected .plant-card-header h3 {
+  color: white;
+}
+
+.plant-preview {
+  margin: 0;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.plant-card.selected .plant-preview {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.plant-detail {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-detail {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.close-detail:hover {
+  color: #333;
+}
+
+.plant-detail h2 {
+  margin: 0 0 30px 0;
+  color: #2d5016;
+  font-size: 2em;
+}
+
+.care-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-section {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #7cb342;
+}
+
+.info-section h4 {
+  margin: 0 0 10px 0;
+  color: #2d5016;
+  font-size: 1.05em;
+}
+
+.info-section p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.issues-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.issues-list li {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .library-container {
+    padding: 20px 10px;
+  }
+  
+  .plants-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .plant-detail {
+    padding: 20px;
+  }
+  
+  .care-info {
+    grid-template-columns: 1fr;
+  }
+}
