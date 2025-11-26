@@ -6,6 +6,7 @@ import DiagnosisResult from './components/DiagnosisResult';
 import PlantLibrary from './components/PlantLibrary';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -76,6 +77,8 @@ function App() {
           <PlantLibrary apiUrl={API_BASE_URL} />
         )}
       </div>
+      
+      <Chatbot />
     </div>
   );
 }

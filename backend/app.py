@@ -1,6 +1,6 @@
 """
-AI Gardening Assistant Backend
-Flask API for plant disease detection and recommendations
+Gardener.ai Backend
+Flask API for plant disease detection and expert gardening recommendations
 """
 
 from flask import Flask, request, jsonify
@@ -91,7 +91,7 @@ def health_check():
     """Health check endpoint"""
     return jsonify({
         'status': 'healthy',
-        'service': 'AI Gardening Assistant Backend',
+        'service': 'Gardener.ai Backend',
         'model_loaded': model is not None
     })
 

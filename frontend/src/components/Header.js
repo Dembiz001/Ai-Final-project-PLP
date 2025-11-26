@@ -7,9 +7,9 @@ function Header() {
       <div className="header-container">
         <div className="logo">
           <span className="logo-icon">🌱</span>
-          <h1>AI Garden Assistant</h1>
+          <h1>Gardener.ai</h1>
         </div>
-        <p className="tagline">Intelligent Plant Care at Your Fingertips</p>
+        <p className="tagline">AI-Powered Plant Care for Every Gardener</p>
       </div>
     </header>
   );
