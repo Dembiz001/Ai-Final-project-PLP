@@ -1,8 +1,11 @@
 Flask==2.3.3
 Flask-CORS==4.0.0
-tensorflow==2.13.0
+# Use a TensorFlow release available on Render's pip index
+tensorflow==2.20.0
 Pillow==10.0.0
 numpy==1.24.3
 python-dotenv==1.0.0
 firebase-admin==6.2.0
 requests==2.31.0
+# Add Gunicorn for production process management
+gunicorn==21.2.0
